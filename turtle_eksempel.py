@@ -6,12 +6,6 @@ import turtle
 import math
 
 
-turtle.forward(100)         # Gå 100 piksler forover
-turtle.right(90)            # Snu 90 grader mot høyre
-turtle.forward(50)
-turtle.penup()              # Ta opp penna så den ikke tegner
-turtle.forward(50)
-turtle.pendown()            # Sett ned penna
 turtle.pencolor("orange")   # Setter tegnefargen lik oransje
 turtle.pensize(5)           # Setter penna sin bredde lik 5 piksler
 turtle.fillcolor("green")   # Setter fyllfarge til grønn
