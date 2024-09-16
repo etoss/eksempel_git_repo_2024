@@ -11,11 +11,9 @@ def tegn_trekant(pennstorrelse = 5, pennfarge="orange", fyll="green"):
     turtle.pensize(pennstorrelse)# Setter penna sin bredde lik 5 piksler
     turtle.fillcolor(fyll)   # Setter fyllfarge til grønn
     turtle.begin_fill()         # Start å tegne figur som skal fylles
-    turtle.forward(100)
-    turtle.right(120)
-    turtle.forward(100)
-    turtle.right(120)
-    turtle.forward(100)
+    for i in range(3):
+        turtle.forward(100)
+        turtle.right(120)
     turtle.end_fill()           # Figuren som skal fylles er ferdig, fyll den.
 
 
