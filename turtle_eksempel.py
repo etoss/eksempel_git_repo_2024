@@ -6,17 +6,24 @@ import turtle
 import math
 
 
-turtle.pencolor("orange")   # Setter tegnefargen lik oransje
-turtle.pensize(5)           # Setter penna sin bredde lik 5 piksler
-turtle.fillcolor("green")   # Setter fyllfarge til grønn
-turtle.begin_fill()         # Start å tegne figur som skal fylles
-turtle.forward(100)
-turtle.right(120)
-turtle.forward(100)
-turtle.right(120)
-turtle.forward(100)
-turtle.end_fill()           # Figuren som skal fylles er ferdig, fyll den.
+def tegn_trekant(pennstorrelse = 5, pennfarge="orange", fyll="green"):
+    turtle.pencolor(pennfarge)   # Setter tegnefargen lik oransje
+    turtle.pensize(pennstorrelse)# Setter penna sin bredde lik 5 piksler
+    turtle.fillcolor(fyll)   # Setter fyllfarge til grønn
+    turtle.begin_fill()         # Start å tegne figur som skal fylles
+    turtle.forward(100)
+    turtle.right(120)
+    turtle.forward(100)
+    turtle.right(120)
+    turtle.forward(100)
+    turtle.end_fill()           # Figuren som skal fylles er ferdig, fyll den.
 
+
+tegn_trekant()
+turtle.penup()
+turtle.goto(-100, 100)
+turtle.pendown()
+tegn_trekant(3, "black", "blue")
 turtle.done()               # Lar turtle-vinduet være åpent selv om scriptet
                             # er ferdig.
 
